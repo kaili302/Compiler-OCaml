@@ -1,9 +1,10 @@
-This repo is created for a school project.
+This repo is created for a school project.</br>
+</br>
+To run and test the compiler :  ocamlbuild Main.byte -- tests/Test_fonction.mjava</br>
 
-To run and test the compiler :  ocamlbuild Main.byte -- tests/Test_fonction.mjava
-
-Project structure : 
-1. Typer: ( complete)
+<h1>Project structure : </h1>
+<div>
+<strong>1. Typer: ( complete)</strong>
   1.1  Typing/Env.ml 
   This file creates the typing environment, which contains two environments: 
    env_cl ->  used to store and type class, methods and attributes of class
@@ -15,8 +16,9 @@ Project structure :
   
   1.3 Typing/ExprTyper.ml
   This file is a part of Typer.ml, which focuses on typing expressions (give type to expression)
-
-2. Compilation ( complete)
+</div>
+<div>
+<strong>2. Compilation ( complete)</strong>
   2.1 Compiling/EnvHeap.ml
   This file creates a virtual heap(tas) to store all class informations. Since the type is already testet in typer part,
   we ignore the type of each varaible. 
@@ -25,8 +27,9 @@ Project structure :
   and its arguments' name (name's value will replace variable in body expression) 
   2.2 Compiling/Compilation.ml
   Add all classes and its attributes and methods to EnvHeap.ml
+</div>  
   
-3. Evaluation (Basic Functions)
+<strong>3. Evaluation (Basic Functions)</strong>
   
 
 
