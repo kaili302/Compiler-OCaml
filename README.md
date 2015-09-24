@@ -27,7 +27,6 @@ Project structure :
   Add all classes and its attributes and methods to EnvHeap.ml
   
 3. Evaluation (Basic Functions)
-  Our Evaluation part is not completely finished, for instance, it can only evaluate regular expresions with Int, String and Boolean type,
-  which means it can't evaluate expressions inside a class method.
+  
 
 
