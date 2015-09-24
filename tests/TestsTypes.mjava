@@ -1,0 +1,18 @@
+class A {
+  Int a=1
+  String b="123"
+  Boolean c = true
+  Boolean isEqual (Int aa, Int bb){
+    1==2
+  }
+}
+
+class B extends C {
+
+}
+
+class C extends Object{
+  C c= new C
+  
+  
+}

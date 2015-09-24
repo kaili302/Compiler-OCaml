@@ -1,0 +1,43 @@
+class A {
+  String getName(){
+    "Class A"
+  }
+}
+class B extends A {
+  Int a=12
+  A aclass = new B
+  B bclass = new B
+  Int getID (){ 12 }
+  
+  String testCorrectExpressions (String locVar){
+    locVar;                       // Test local variable
+    bclass.getID();               // Call method from current class
+    bclass.getName();             // Call method from parent class
+    2+3;                          // Execute expression
+    new A;                        // new
+    if(1==1) {
+      1+2
+    }else{
+      1
+    };                             //if
+    "test";                       //val
+    123;
+    true;
+    a;                            //var
+    a=20;
+    a= a+1;                       // Assign
+    A aa=new A in {
+      aa.getName()                //Test local variable
+    };                            // Define
+    (B)aclass;                    // Cast
+    ((B)aclass).getID();          // Cast aclass to B type then call B.getID()
+    if (aclass instanceof Int)
+      true
+    else
+      false
+    ;                             // Instanceof
+    "ss"
+  }
+}
+"eee"!="eee"; 1+2; 
+if (true) 1 else 2 ; 4

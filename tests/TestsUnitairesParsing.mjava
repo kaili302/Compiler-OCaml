@@ -1,0 +1,25 @@
+//class a {}
+class A {
+      Int a1 = 1
+      Boolean a2 = false
+      //A this
+      A a3
+      Object a5
+      String a6 = "jsdjkndjk\njdsdjkf"
+      
+      Int getID (){
+            12
+      }
+      String getName (){
+            "12"
+      }
+      
+}
+class B extends C {
+      // AA mthis() { Int this = 3 in new AA }
+      // Int this
+
+      //Int matt4() { this.ab }
+}
+class C extends B {}
+if (true) 1 else 2 ; 3

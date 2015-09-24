@@ -1,0 +1,75 @@
+### Starting build.
+# Target: Main/Main.ml.depends, tags: { extension:ml, file:Main/Main.ml, ocaml, ocamldep, package(ANSITerminal), quiet, traverse, use_menhir, warn_a }
+/usr/bin/ocamldep -modules Main/Main.ml > Main/Main.ml.depends # cached
+# Target: Main/Compile.ml.depends, tags: { extension:ml, file:Main/Compile.ml, ocaml, ocamldep, package(ANSITerminal), quiet, traverse, use_menhir, warn_a }
+/usr/bin/ocamldep -modules Main/Compile.ml > Main/Compile.ml.depends # cached
+# Target: Parsing/AST.ml.depends, tags: { extension:ml, file:Parsing/AST.ml, ocaml, ocamldep, package(ANSITerminal), quiet, traverse, use_menhir, warn_a }
+/usr/bin/ocamldep -modules Parsing/AST.ml > Parsing/AST.ml.depends # cached
+# Target: Utils/Located.mli.depends, tags: { extension:mli, file:Utils/Located.mli, ocaml, ocamldep, package(ANSITerminal), quiet, traverse, use_menhir, warn_a }
+/usr/bin/ocamldep -modules Utils/Located.mli > Utils/Located.mli.depends # cached
+# Target: Utils/Location.mli.depends, tags: { extension:mli, file:Utils/Location.mli, ocaml, ocamldep, package(ANSITerminal), quiet, traverse, use_menhir, warn_a }
+/usr/bin/ocamldep -modules Utils/Location.mli > Utils/Location.mli.depends # cached
+# Target: Utils/Location.cmi, tags: { byte, compile, extension:mli, file:Utils/Location.mli, interf, ocaml, package(ANSITerminal), quiet, traverse, use_menhir, warn_a }
+/usr/bin/ocamlc -c -w a -I Utils -I Main -I Compiling -I Eval -I Typing -I Parsing -o Utils/Location.cmi Utils/Location.mli
+# Target: Typing/Type.mli.depends, tags: { extension:mli, file:Typing/Type.mli, ocaml, ocamldep, package(ANSITerminal), quiet, traverse, use_menhir, warn_a }
+/usr/bin/ocamldep -modules Typing/Type.mli > Typing/Type.mli.depends # cached
+# Target: Utils/Located.cmi, tags: { byte, compile, extension:mli, file:Utils/Located.mli, interf, ocaml, package(ANSITerminal), quiet, traverse, use_menhir, warn_a }
+/usr/bin/ocamlc -c -w a -I Utils -I Main -I Compiling -I Eval -I Typing -I Parsing -o Utils/Located.cmi Utils/Located.mli
+# Target: Typing/Type.cmi, tags: { byte, compile, extension:mli, file:Typing/Type.mli, interf, ocaml, package(ANSITerminal), quiet, traverse, use_menhir, warn_a }
+/usr/bin/ocamlc -c -w a -I Typing -I Utils -I Main -I Compiling -I Eval -I Parsing -o Typing/Type.cmi Typing/Type.mli
+# Target: Compiling/Compilation.ml.depends, tags: { extension:ml, file:Compiling/Compilation.ml, ocaml, ocamldep, package(ANSITerminal), quiet, traverse, use_menhir, warn_a }
+/usr/bin/ocamldep -modules Compiling/Compilation.ml > Compiling/Compilation.ml.depends # cached
+# Target: Parsing/AST.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:Parsing/AST.cmo, file:Parsing/AST.ml, implem, ocaml, package(ANSITerminal), quiet, traverse, use_menhir, warn_a }
+/usr/bin/ocamlc -c -w a -I Parsing -I Utils -I Main -I Compiling -I Eval -I Typing -o Parsing/AST.cmo Parsing/AST.ml
+# Target: Compiling/EnvHeap.ml.depends, tags: { extension:ml, file:Compiling/EnvHeap.ml, ocaml, ocamldep, package(ANSITerminal), quiet, traverse, use_menhir, warn_a }
+/usr/bin/ocamldep -modules Compiling/EnvHeap.ml > Compiling/EnvHeap.ml.depends # cached
+# Target: Compiling/EnvHeap.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:Compiling/EnvHeap.cmo, file:Compiling/EnvHeap.ml, implem, ocaml, package(ANSITerminal), quiet, traverse, use_menhir, warn_a }
+/usr/bin/ocamlc -c -w a -I Compiling -I Utils -I Main -I Eval -I Typing -I Parsing -o Compiling/EnvHeap.cmo Compiling/EnvHeap.ml
+# Target: Parsing/Error.mli.depends, tags: { extension:mli, file:Parsing/Error.mli, ocaml, ocamldep, package(ANSITerminal), quiet, traverse, use_menhir, warn_a }
+/usr/bin/ocamldep -modules Parsing/Error.mli > Parsing/Error.mli.depends # cached
+# Target: Eval/ExprEval.ml.depends, tags: { extension:ml, file:Eval/ExprEval.ml, ocaml, ocamldep, package(ANSITerminal), quiet, traverse, use_menhir, warn_a }
+/usr/bin/ocamldep -modules Eval/ExprEval.ml > Eval/ExprEval.ml.depends # cached
+# Target: Utils/Env.mli.depends, tags: { extension:mli, file:Utils/Env.mli, ocaml, ocamldep, package(ANSITerminal), quiet, traverse, use_menhir, warn_a }
+/usr/bin/ocamldep -modules Utils/Env.mli > Utils/Env.mli.depends
+# Target: Parsing/Error.cmi, tags: { byte, compile, extension:mli, file:Parsing/Error.mli, interf, ocaml, package(ANSITerminal), quiet, traverse, use_menhir, warn_a }
+/usr/bin/ocamlc -c -w a -I Parsing -I Utils -I Main -I Compiling -I Eval -I Typing -o Parsing/Error.cmi Parsing/Error.mli
+# Target: Utils/Env.cmi, tags: { byte, compile, extension:mli, file:Utils/Env.mli, interf, ocaml, package(ANSITerminal), quiet, traverse, use_menhir, warn_a }
+/usr/bin/ocamlc -c -w a -I Utils -I Main -I Compiling -I Eval -I Typing -I Parsing -o Utils/Env.cmi Utils/Env.mli
+# Target: Parsing/Lexer.mll, tags: { extension:mll, file:Parsing/Lexer.mll, lexer, ocaml, ocamllex, package(ANSITerminal), quiet, traverse, use_menhir, warn_a }
+/usr/bin/ocamllex -q Parsing/Lexer.mll # cached
+# Target: Parsing/Lexer.ml.depends, tags: { extension:ml, file:Parsing/Lexer.ml, ocaml, ocamldep, package(ANSITerminal), quiet, traverse, use_menhir, warn_a }
+/usr/bin/ocamldep -modules Parsing/Lexer.ml > Parsing/Lexer.ml.depends # cached
+# Target: Parsing/Parser.mly.depends, tags: { extension:mly, file:Parsing/Parser.mly, menhir_ocamldep, ocaml, ocamldep, package(ANSITerminal), quiet, traverse, use_menhir, warn_a }
+menhir --raw-depend --ocamldep '/usr/bin/ocamldep -modules' Parsing/Parser.mly > Parsing/Parser.mly.depends # cached
+# Target: Parsing/Parser.mly, tags: { byte, compile, extension:mly, file:Parsing/Parser.mly, menhir, ocaml, package(ANSITerminal), parser, quiet, traverse, use_menhir, warn_a }
+menhir --ocamlc '/usr/bin/ocamlc -w a -I Parsing -I Utils -I Main -I Compiling -I Eval -I Typing' --infer Parsing/Parser.mly
+# Target: Parsing/Parser.mli.depends, tags: { extension:mli, file:Parsing/Parser.mli, ocaml, ocamldep, package(ANSITerminal), quiet, traverse, use_menhir, warn_a }
+/usr/bin/ocamldep -modules Parsing/Parser.mli > Parsing/Parser.mli.depends # cached
+# Target: Parsing/Parser.cmi, tags: { byte, compile, extension:mli, file:Parsing/Parser.mli, interf, ocaml, package(ANSITerminal), quiet, traverse, use_menhir, warn_a }
+/usr/bin/ocamlc -c -w a -I Parsing -I Utils -I Main -I Compiling -I Eval -I Typing -o Parsing/Parser.cmi Parsing/Parser.mli
+# Target: Typing/Typer.ml.depends, tags: { extension:ml, file:Typing/Typer.ml, ocaml, ocamldep, package(ANSITerminal), quiet, traverse, use_menhir, warn_a }
+/usr/bin/ocamldep -modules Typing/Typer.ml > Typing/Typer.ml.depends # cached
+# Target: Typing/Env.ml.depends, tags: { extension:ml, file:Typing/Env.ml, ocaml, ocamldep, package(ANSITerminal), quiet, traverse, use_menhir, warn_a }
+/usr/bin/ocamldep -modules Typing/Env.ml > Typing/Env.ml.depends # cached
+# Target: Typing/ExprTyper.ml.depends, tags: { extension:ml, file:Typing/ExprTyper.ml, ocaml, ocamldep, package(ANSITerminal), quiet, traverse, use_menhir, warn_a }
+/usr/bin/ocamldep -modules Typing/ExprTyper.ml > Typing/ExprTyper.ml.depends # cached
+# Target: Typing/Env.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:Typing/Env.cmo, file:Typing/Env.ml, implem, ocaml, package(ANSITerminal), quiet, traverse, use_menhir, warn_a }
+/usr/bin/ocamlc -c -w a -I Typing -I Utils -I Main -I Compiling -I Eval -I Parsing -o Typing/Env.cmo Typing/Env.ml
+# Target: Typing/ExprTyper.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:Typing/ExprTyper.cmo, file:Typing/ExprTyper.ml, implem, ocaml, package(ANSITerminal), quiet, traverse, use_menhir, warn_a }
+/usr/bin/ocamlc -c -w a -I Typing -I Utils -I Main -I Compiling -I Eval -I Parsing -o Typing/ExprTyper.cmo Typing/ExprTyper.ml
+# Target: Compiling/Compilation.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:Compiling/Compilation.cmo, file:Compiling/Compilation.ml, implem, ocaml, package(ANSITerminal), quiet, traverse, use_menhir, warn_a }
+/usr/bin/ocamlc -c -w a -I Compiling -I Utils -I Main -I Eval -I Typing -I Parsing -o Compiling/Compilation.cmo Compiling/Compilation.ml
+# Target: Eval/ExprEval.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:Eval/ExprEval.cmo, file:Eval/ExprEval.ml, implem, ocaml, package(ANSITerminal), quiet, traverse, use_menhir, warn_a }
+/usr/bin/ocamlc -c -w a -I Eval -I Utils -I Main -I Compiling -I Typing -I Parsing -o Eval/ExprEval.cmo Eval/ExprEval.ml
+# Target: Parsing/Lexer.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:Parsing/Lexer.cmo, file:Parsing/Lexer.ml, implem, ocaml, package(ANSITerminal), quiet, traverse, use_menhir, warn_a }
+/usr/bin/ocamlc -c -w a -I Parsing -I Utils -I Main -I Compiling -I Eval -I Typing -o Parsing/Lexer.cmo Parsing/Lexer.ml
+# Target: Typing/Typer.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:Typing/Typer.cmo, file:Typing/Typer.ml, implem, ocaml, package(ANSITerminal), quiet, traverse, use_menhir, warn_a }
+/usr/bin/ocamlc -c -w a -I Typing -I Utils -I Main -I Compiling -I Eval -I Parsing -o Typing/Typer.cmo Typing/Typer.ml
+# Target: Main/Compile.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:Main/Compile.cmo, file:Main/Compile.ml, implem, ocaml, package(ANSITerminal), quiet, traverse, use_menhir, warn_a }
+/usr/bin/ocamlc -c -w a -I Main -I Utils -I Compiling -I Eval -I Typing -I Parsing -o Main/Compile.cmo Main/Compile.ml
++ /usr/bin/ocamlc -c -w a -I Main -I Utils -I Compiling -I Eval -I Typing -I Parsing -o Main/Compile.cmo Main/Compile.ml
+File "Main/Compile.ml", line 1:
+Error: The files Typing/Typer.cmi and Eval/ExprEval.cmi
+       make inconsistent assumptions over interface Env
+Command exited with code 2.
+# Compilation unsuccessful.
