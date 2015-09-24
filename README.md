@@ -3,7 +3,7 @@ This repo is created for a school project.</br>
 To run and test the compiler :  ocamlbuild Main.byte -- tests/Test_fonction.mjava</br>
 
 <h4>Project structure : </h4>
-<strong>1. Typer: ( complete)</strong></br>
+<strong>1. Typer: </strong></br>
 1.1  Typing/Env.ml
 This file creates the typing environment, which contains two environments: 
 env_cl ->  used to store and type class, methods and attributes of class
@@ -16,7 +16,7 @@ set class parent, then type attributes and finally type methods of the class
 1.3 Typing/ExprTyper.ml
 This file is a part of Typer.ml, which focuses on typing expressions (give type to expression)
 
-<strong>2. Compilation ( complete)</strong></br>
+<strong>2. Compilation </strong></br>
 2.1 Compiling/EnvHeap.ml
 This file creates a virtual heap(tas) to store all class informations. Since the type is already testet in typer part,
 we ignore the type of each varaible. 
